@@ -20,5 +20,6 @@ export default {
 <style scoped>
 .link-home {
   color: white !important;
-  text-decoration: none;}
+  text-decoration: none;
+  }
 </style>

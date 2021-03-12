@@ -1,6 +1,6 @@
 <template>
     <v-container class="home">
-    <h2 class="text-h5 text-center mb-3 mt-5">Flamengo</h2>
+    <h2 class="text-h5 text-center mb-3 mt-5">Internacional</h2>
     <div>
     <v-img
       class="img"
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name: 'Flamengo'
+    name: ' Flamengo'
 }
 </script>
 
