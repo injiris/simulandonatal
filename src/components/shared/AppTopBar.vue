@@ -1,5 +1,5 @@
 <template>
-  <v-card class="">
+  <v-card class="app-top-bar">
     <v-app-bar
       absolute
       app
