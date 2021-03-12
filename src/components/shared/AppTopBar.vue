@@ -63,6 +63,15 @@
               <v-list-item-title>Classificação</v-list-item-title>
             </v-list-item>
           </router-link>
+
+          <router-link to="/Flamengo">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-soccer</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Flamengo</v-list-item-title>
+            </v-list-item>
+          </router-link>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
