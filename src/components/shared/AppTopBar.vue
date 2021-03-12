@@ -1,5 +1,5 @@
 <template>
-  <v-card class="overflow-hidden">
+  <v-card class="">
     <v-app-bar
       absolute
       app
@@ -79,9 +79,13 @@
     <v-sheet
       id="scrolling-techniques-5"
       class="overflow-y-auto"
-      max-height="600"
+      max-height="100vh"
     >
-      <v-container style="height: 1500px"></v-container>
+      <v-container style="height: 1500px">
+        <v-container class="d-flex align-center" id="rotas">
+        <router-view/>
+        </v-container>
+      </v-container>
     </v-sheet>
   </v-card>
 </template>
@@ -101,5 +105,9 @@ export default {
 <style scoped>
 .app-top-bar a {
   text-decoration: none;
+}
+
+#rotas {
+  margin-top: 15vh;
 }
 </style>

@@ -5,7 +5,7 @@
       <v-list-item>
         <v-list-item-icon>Escudo</v-list-item-icon>
         <v-list-item-title>Clube</v-list-item-title>
-        <span class="">Pontos</span>
+        <span>Pontos</span>
       </v-list-item>
       <v-list-item v-for="clube of ordernarClubes" :key="clube.id">
         <v-list-item-icon size="24">
