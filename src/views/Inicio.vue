@@ -4,7 +4,7 @@
 
     <v-img
       class="inicio-imagem mb-4"
-      src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.2974821:1596806515/Serie-A.png"
+      src="https://www.fnvsports.com.br/wp-content/uploads/2021/01/brasileirao.jpg"
     >
     </v-img>
     <p>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "Início",
+  name: "Inicio",
   components: {},
   data() {
     return {

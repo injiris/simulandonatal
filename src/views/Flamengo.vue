@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "Flamengo",
+  name: "Flamengo"
 };
 </script>
 
