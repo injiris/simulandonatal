@@ -1,25 +1,22 @@
 <template>
   <v-app>
-    <v-main>
-      <router-view/>
-    </v-main>
+    <AppTopBar/>
   </v-app>
 </template>
 
 <script>
+import AppTopBar from './components/shared/AppTopBar';
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    
-    }
+    AppTopBar,
+  },
+  data: () => ({
+    //
+  }),
 };
-
 </script>
 
 <style scoped>
-.link-home {
-  color: white !important;
-  text-decoration: none;
-  }
 </style>
