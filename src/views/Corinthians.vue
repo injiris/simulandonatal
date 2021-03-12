@@ -22,13 +22,8 @@
 
 <script>
 export default {
-<<<<<<< HEAD
-    name: "Corinthians"
-}
-=======
   name: "Corinthians",
 };
->>>>>>> ae00e1e7c50fe0c3ccd7895756c153355be23828
 </script>
 
 <style scoped>

@@ -2,15 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ClubesLista from '../views/ClubesLista.vue'
 import Flamengo from "../views/Flamengo.vue"
-<<<<<<< HEAD
 import Corinthians from "../views/Corinthians.vue"
 import Santos from "../views/Santos.vue"
 import Fortaleza from "../views/Fortaleza.vue"
 import Internacional from "../views/Internacional.vue"
 
-=======
 import Inicio from "../views/Inicio.vue"
->>>>>>> ae00e1e7c50fe0c3ccd7895756c153355be23828
 
 Vue.use(VueRouter)
 
