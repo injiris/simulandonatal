@@ -72,9 +72,46 @@
               <v-list-item-title>Flamengo</v-list-item-title>
             </v-list-item>
           </router-link>
+          <router-link to="/Corinthians">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-soccer</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Corinthians</v-list-item-title>
+            </v-list-item>
+          </router-link>
+
+          <router-link to="/Fortaleza">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-soccer</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Fortaleza</v-list-item-title>
+            </v-list-item>
+          </router-link>
+
+          <router-link to="/Internacional">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-soccer</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Internacional</v-list-item-title>
+            </v-list-item>
+          </router-link>
+
+          <router-link to="/Santos">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-soccer</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Santos</v-list-item-title>
+            </v-list-item>
+          </router-link>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
+
+    
 
     <v-sheet
       id="scrolling-techniques-5"
@@ -83,7 +120,7 @@
     >
       <v-container style="height: 1500px">
         <v-container class="d-flex align-center" id="rotas">
-        <router-view/>
+           <router-view/>
         </v-container>
       </v-container>
     </v-sheet>
@@ -109,5 +146,9 @@ export default {
 
 #rotas {
   margin-top: 15vh;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
