@@ -2,6 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ClubesLista from '../views/ClubesLista.vue'
 import Flamengo from "../views/Flamengo.vue"
+import Corinthians from "../views/Corinthians.vue"
+import Santos from "../views/Santos.vue"
+import Fortaleza from "../views/Fortaleza.vue"
+import Internacional from "../views/Internacional.vue"
+
 
 Vue.use(VueRouter)
 
@@ -15,6 +20,26 @@ const routes = [
     path: "/flamengo",
     name: "Flamengo",
     component: Flamengo
+  },
+  {
+    path: "/Corinthians",
+    name: "Corinthians",
+    component: Corinthians
+  },
+  {
+    path: "/fortaleza",
+    name: "Fortaleza",
+    component: Fortaleza
+  },
+  {
+    path: "/internacional",
+    name: "Internacional",
+    component: Internacional
+  },
+  {
+    path: "/santos",
+    name: "Santos",
+    component: Santos
   },
 ]
 

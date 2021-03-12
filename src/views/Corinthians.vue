@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name: 'Corinthians'
+    name: "Corinthians"
 }
 </script>
 
