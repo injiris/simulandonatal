@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import ClubesLista from '../views/ClubesLista.vue'
 import Flamengo from "../views/Flamengo.vue"
 import Inicio from "../views/Inicio.vue"
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -24,7 +25,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  routes,
-});
+  routes
+})
 
-export default router;
+export default router

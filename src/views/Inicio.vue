@@ -13,11 +13,10 @@
     </p>
 
     <router-link to="/">
-      <div class="rounded-pill teal darken-4" v-for="clube of inicio" :key="clube.escudo">
-        <v-avatar size="45">
-          <img :src="clube.escudo" :alt="clube.nome" />
-        </v-avatar>
-      </div>
+    <div class="d-flex flex-wrap" v-for="clube of inicio" :key="clube.escudo">
+        
+    </div>
+      
     </router-link>
   </v-container>
 </template>
@@ -53,6 +52,7 @@ p {
 
 .rounded-pill {
   display: flex;
+  background-color: green;
   width: 40vw;
   justify-content: center;
 }
