@@ -124,7 +124,7 @@ export default {
           icon: "mdi-soccer-field",
         },
         {
-          icon: "account-group",
+          icon: "mdi-account-group",
           text: "Times",
           subLinks: [
             {
