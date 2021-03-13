@@ -106,7 +106,7 @@ p {
 .first-item,
 .item {
   height: 50px;
-  width: 40vw;
+  width: 150px;
   border-radius: 40px;
   margin: 5px;
 }
