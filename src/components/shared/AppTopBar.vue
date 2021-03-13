@@ -127,7 +127,7 @@ export default {
           icon: "mdi-soccer",
         },
         {
-          icon: "account-circle",
+          icon: "account-group",
           text: "Times",
           subLinks: [
             {
