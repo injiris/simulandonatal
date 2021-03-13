@@ -33,7 +33,7 @@
           </div>
         </router-link>
 
-        </router-link to="/Corinthians">
+        <router-link to="/Corinthians">
         <div class="item teal darken-4">
           <img
             class="team-shield"
@@ -43,7 +43,7 @@
         </div>
         </router-link>
 
-        </router-link to="/Palmeiras">
+        <router-link to="/Santos">
         <div class="item teal darken-4">
           <img
             class="team-shield"
@@ -53,7 +53,7 @@
         </div>
         </router-link>
 
-        </router-link to="/Fortaleza">
+        <router-link to="/Fortaleza">
         <div class="item teal darken-4">
           <img
             class="team-shield"
@@ -61,7 +61,7 @@
             :alt="inicio[4].nome"
           />
         </div>
-        <router-link>
+        </router-link>
       </div>
     </div>
   </v-container>
