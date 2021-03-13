@@ -30,12 +30,9 @@
       </v-btn>
 
       <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
+        <v-icon>mdi-brightness-6</v-icon>
       </v-btn>
 
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -119,12 +116,12 @@ export default {
         {
           text: "Inicio",
           to: "/",
-          icon: "mdi-home",
+          icon: "mdi-shield-home",
         },
         {
           text: "Classificação",
           to: "/Classificacao",
-          icon: "mdi-soccer",
+          icon: "mdi-soccer-field",
         },
         {
           icon: "account-group",
