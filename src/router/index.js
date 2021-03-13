@@ -28,7 +28,7 @@ const routes = [
     component: Flamengo
   },
   {
-    path: "/corinthians",
+    path: "/Corinthians",
     name: "Corinthians",
     component: Corinthians
   },

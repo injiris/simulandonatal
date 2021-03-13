@@ -12,12 +12,58 @@
       Brasileirão Assaí – Série A 2020 por motivos de patrocínio.
     </p>
 
-    <router-link to="/">
-    <div class="d-flex flex-wrap" v-for="clube of inicio" :key="clube.escudo">
-        
+    <div class="wrapper">
+      <router-link to="/Internacional">
+        <div class="first-item teal darken-4">
+          <img
+            class="team-shield"
+            :src="inicio[0].escudo"
+            :alt="inicio[0].nome"
+          />
+        </div>
+      </router-link>
+      <div class="two-columns-wrapper">
+        <router-link to="/Flamengo">
+          <div class="item teal darken-4">
+            <img
+              class="team-shield"
+              :src="inicio[1].escudo"
+              :alt="inicio[1].nome"
+            />
+          </div>
+        </router-link>
+
+        <router-link to="/Corinthians">
+        <div class="item teal darken-4">
+          <img
+            class="team-shield"
+            :src="inicio[2].escudo"
+            :alt="inicio[2].nome"
+          />
+        </div>
+        </router-link>
+
+        <router-link to="/Santos">
+        <div class="item teal darken-4">
+          <img
+            class="team-shield"
+            :src="inicio[3].escudo"
+            :alt="inicio[3].nome"
+          />
+        </div>
+        </router-link>
+
+        <router-link to="/Fortaleza">
+        <div class="item teal darken-4">
+          <img
+            class="team-shield"
+            :src="inicio[4].escudo"
+            :alt="inicio[4].nome"
+          />
+        </div>
+        </router-link>
+      </div>
     </div>
-      
-    </router-link>
   </v-container>
 </template>
 
@@ -35,6 +81,7 @@ export default {
       .then((response) => response.json())
       .then((json) => {
         this.inicio = json;
+        console.log(this.inicio);
       });
   },
 };
@@ -50,13 +97,28 @@ p {
   font-size: 15px;
 }
 
-.rounded-pill {
+.wrapper {
   display: flex;
-  background-color: green;
-  width: 40vw;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
+.first-item,
+.item {
+  height: 50px;
+  width: 40vw;
+  border-radius: 40px;
+  margin: 5px;
+}
 
+.two-columns-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.team-shield {
+  height: 45px;
+  margin-left: 45px;
+  margin-top: 3px;
+}
 </style>
-
