@@ -5,7 +5,7 @@
       <v-img
         class="mx-auto"
         max-width="225"
-        src="https://i.pinimg.com/originals/70/04/ac/7004acab5423da2302e4743e84612b39.jpg"
+        src="https://seeklogo.com/images/F/fortaleza-esporte-clube-logo-5385E978D0-seeklogo.com.png"
       >
       </v-img>
     </div>

@@ -5,7 +5,7 @@
       <v-img
         class="mx-auto"
         max-width="225"
-        src="https://http2.mlstatic.com/D_NQ_NP_818583-MLB31205518515_062019-O.jpg"
+        src="https://seeklogo.com/images/C/Corinthians_Bras_and__227_o-logo-E92E44B595-seeklogo.com.png"
       >
       </v-img>
     </div>
