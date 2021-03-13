@@ -2,11 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ClubesLista from '../views/ClubesLista.vue'
 import Flamengo from "../views/Flamengo.vue"
-import Corinthians from "../views/Corinthians.vue"
 import Santos from "../views/Santos.vue"
+import Corinthians from "../views/Corinthians.vue"
 import Fortaleza from "../views/Fortaleza.vue"
 import Internacional from "../views/Internacional.vue"
 import Inicio from "../views/Inicio.vue"
+
 
 Vue.use(VueRouter)
 
@@ -32,17 +33,17 @@ const routes = [
     component: Corinthians
   },
   {
-    path: "/fortaleza",
+    path: "/Fortaleza",
     name: "Fortaleza",
     component: Fortaleza
   },
   {
-    path: "/internacional",
+    path: "/Internacional",
     name: "Internacional",
     component: Internacional
   },
   {
-    path: "/santos",
+    path: "/Santos",
     name: "Santos",
     component: Santos
   },
