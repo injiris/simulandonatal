@@ -18,12 +18,12 @@ const routes = [
     component: Inicio,
   },
   {
-    path: '/classificacao',
+    path: '/Classificacao',
     name: 'ClubesLista',
     component: ClubesLista,
   },
   {
-    path: "/flamengo",
+    path: "/Flamengo",
     name: "Flamengo",
     component: Flamengo
   },

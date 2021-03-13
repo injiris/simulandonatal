@@ -36,82 +36,62 @@
       <v-btn icon>
         <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
-
-
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      temporary
+      class="background-fodase"
+    >
       <v-list nav dense>
-        <v-list-item-group
-          v-model="group"
-          active-class="green--text text--lighten-2"
-        >
-          <router-link to="/">
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Inicio</v-list-item-title>
-            </v-list-item>
-          </router-link>
+        <div v-for="(link, i) in links" :key="i">
+          <v-list-item
+            v-if="!link.subLinks"
+            :to="link.to"
+            :key="link.text"
+            no-action
+            :prepend-icon="link.icon"
+            :value="false"
+            active-class="white"
+          >
+            <v-list-item-icon>
+              <v-icon>{{ link.icon }}</v-icon>
+            </v-list-item-icon>
 
-          <router-link to="/classificacao">
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-soccer</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Classificação</v-list-item-title>
-            </v-list-item>
-          </router-link>
+            <v-list-item-title v-text="link.text" />
+          </v-list-item>
 
-          <router-link to="/Flamengo">
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-soccer</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Flamengo</v-list-item-title>
-            </v-list-item>
-          </router-link>
-          <router-link to="/Corinthians">
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-soccer</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Corinthians</v-list-item-title>
-            </v-list-item>
-          </router-link>
+          <v-list-group
+            v-else
+            :key="link.text"
+            no-action
+            :prepend-icon="link.icon"
+            :value="false"
+            active-class="white"
+          >
+            <template v-slot:activator>
+              <v-list-item-title class="text-fodase">{{
+                link.text
+              }}</v-list-item-title>
+            </template>
 
-          <router-link to="/Fortaleza">
-            <v-list-item>
+            <v-list-item
+              v-for="sublink in link.subLinks"
+              :to="sublink.to"
+              :key="sublink.text"
+            >
               <v-list-item-icon>
-                <v-icon>mdi-soccer</v-icon>
+                <v-img class="mx-auto" :src="sublink.icon"></v-img>
               </v-list-item-icon>
-              <v-list-item-title>Fortaleza</v-list-item-title>
+              <v-list-item-title>{{
+                sublink.text
+              }}</v-list-item-title>
             </v-list-item>
-          </router-link>
-
-          <router-link to="/Internacional">
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-soccer</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Internacional</v-list-item-title>
-            </v-list-item>
-          </router-link>
-
-          <router-link to="/Santos">
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-soccer</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Santos</v-list-item-title>
-            </v-list-item>
-          </router-link>
-        </v-list-item-group>
+          </v-list-group>
+        </div>
       </v-list>
     </v-navigation-drawer>
-
-    
 
     <v-sheet
       id="scrolling-techniques-5"
@@ -120,7 +100,7 @@
     >
       <v-container style="height: 1500px">
         <v-container class="d-flex align-center" id="rotas">
-           <router-view/>
+          <router-view />
         </v-container>
       </v-container>
     </v-sheet>
@@ -132,8 +112,52 @@ export default {
   name: "AppTopBar",
   data() {
     return {
+      clubesTabela: [],
       drawer: false,
       group: null,
+      links: [
+        {
+          text: "Inicio",
+          to: "/",
+          icon: "mdi-home",
+        },
+        {
+          text: "Classificação",
+          to: "/Classificacao",
+          icon: "mdi-soccer",
+        },
+        {
+          icon: "account-circle",
+          text: "Times",
+          subLinks: [
+            {
+              text: "Corinthians",
+              to: "/Corinthians",
+              icon: "https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_48x48.png",
+            },
+            {
+              text: "Flamengo",
+              to: "/Flamengo",
+              icon: "https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_48x48.png"
+            },
+            {
+              text: "Fortaleza",
+              to: "/Fortaleza",
+              icon: "https://ssl.gstatic.com/onebox/media/sports/logos/me10ephzRxdj45zVq1Risg_48x48.png"
+            },
+            {
+              text: "Internacional",
+              to: "/Internacional",
+              icon: "https://ssl.gstatic.com/onebox/media/sports/logos/OWVFKuHrQuf4q2Wk0hEmSA_48x48.png"
+            },
+            {
+              text: "Santos",
+              to: "/Santos",
+              icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Santos_logo.svg/1045px-Santos_logo.svg.png"
+            },
+          ],
+        },
+      ],
     };
   },
 };
@@ -150,5 +174,24 @@ export default {
 
 a {
   text-decoration: none;
+}
+
+.text-fodase {
+  color: black;
+}
+
+.v-application .primary--text {
+    color: black !important;
+}
+
+.v-application a {
+    color: black;
+}
+
+.v-list--dense .v-list-item .v-list-item__icon {
+    height: 30px !important;
+    max-width: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 </style>
