@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h2 class="text-h5 text-center mb-3 mt-5">Campeonato Brasileiro</h2>
+    <h1 class="text-h5 text-center mb-3 mt-5">Campeonato Brasileiro</h1>
 
     <v-img
       class="inicio-imagem mb-4"

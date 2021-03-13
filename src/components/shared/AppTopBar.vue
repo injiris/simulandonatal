@@ -30,13 +30,8 @@
       </v-btn>
 
       <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
+        <v-icon>mdi-brightness-6</v-icon>
       </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
-
 
     </v-app-bar>
 
@@ -49,7 +44,7 @@
           <router-link to="/">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
+                <v-icon>mdi-shield-home</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Inicio</v-list-item-title>
             </v-list-item>
@@ -58,7 +53,7 @@
           <router-link to="/classificacao">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-soccer</v-icon>
+                <v-icon>mdi-soccer-field</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Classificação</v-list-item-title>
             </v-list-item>
@@ -67,7 +62,7 @@
           <router-link to="/Flamengo">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-soccer</v-icon>
+                <v-icon>mdi-sort-variant</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Flamengo</v-list-item-title>
             </v-list-item>
@@ -76,7 +71,7 @@
           <router-link to="/Fortaleza">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-soccer</v-icon>
+                <v-icon>mdi-sort-variant</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Fortaleza</v-list-item-title>
             </v-list-item>
@@ -85,7 +80,7 @@
           <router-link to="/Internacional">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-soccer</v-icon>
+                <v-icon>mdi-sort-variant</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Internacional</v-list-item-title>
             </v-list-item>
@@ -94,7 +89,7 @@
           <router-link to="/Santos">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-soccer</v-icon>
+                <v-icon>mdi-sort-variant</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Santos</v-list-item-title>
             </v-list-item>
@@ -103,7 +98,7 @@
           <router-link to="/Corinthians">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-soccer</v-icon>
+                <v-icon>mdi-sort-variant</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Corinthians</v-list-item-title>
             </v-list-item>

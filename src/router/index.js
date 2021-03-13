@@ -6,7 +6,6 @@ import Corinthians from "../views/Corinthians.vue"
 import Santos from "../views/Santos.vue"
 import Fortaleza from "../views/Fortaleza.vue"
 import Internacional from "../views/Internacional.vue"
-
 import Inicio from "../views/Inicio.vue"
 
 Vue.use(VueRouter)
@@ -28,7 +27,7 @@ const routes = [
     component: Flamengo
   },
   {
-    path: "/Corinthians",
+    path: "/corinthians",
     name: "Corinthians",
     component: Corinthians
   },
